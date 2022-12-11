@@ -85,7 +85,6 @@ alias v='nvim '
 
 # >> Shutdown <<
 
-alias begone='clear;tput setaf 1;figlet THOSE WHO RUN AWAY FROM THEIR FATE SHALL BE PUNISHED WITH UTTERMOST SUFFERING -c -f sblood -w 140;tput setaf 7;sleep 5;clear;sudo shutdown -h now'
 alias gtfo='sudo shutdown -h now'
 
 
@@ -94,8 +93,3 @@ alias gtfo='sudo shutdown -h now'
 #========================================
 
 PS1='[\A]\[$(tput bold)\]\u@\h\[$(tput sgr0)\]:\W \$ '
-
-
-# BEGIN_KITTY_SHELL_INTEGRATION
-if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
-# END_KITTY_SHELL_INTEGRATION
