@@ -47,27 +47,19 @@ alias fuck='sudo $(history -p !!)'
 
 # >> Package Manager <<
 
-alias _xi='sudo xbps-install -S '
-alias _xu='sudo xbps-install -Su'
-alias _xr='sudo xbps-remove -R '
+alias apti='sudo apt install '
+alias aptu='sudo apt update && sudo apt upgrade'
+alias aptr='sudo apt remove '
 
 # >> 'ls' family <<
 
 alias ls='ls --color=auto'
-alias lx='ls -lXB'              # Sort by extension
-alias lk='ls -lSr'              # Sort by size, largest last
-alias lt='ls -ltr'              # Sort by date, most recent last
-
-alias ll='ls -la --color=auto'
-alias lr='ll -R'                # Recursive ls
-alias tree='tree -Csuh'         # Alternative to recursive ls
+alias la='ls -la'
 
 # >> 'cd' family <<
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
 
 # >> Pretty print PATH variables <<
 
@@ -76,12 +68,10 @@ alias path='echo -e ${PATH//:\\n}'
 # >> Clear screen <<
 
 alias c='clear'
-alias cl='clear;ls;pwd'
+alias cl='clear;pwd;ls'
 
 # >> various programs <<
-
-alias nf='neofetch'
-alias v='nvim '
+alias v='vim '
 
 # >> Shutdown <<
 
